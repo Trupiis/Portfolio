@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+
+@keyframes breathing-border {
+  0% {
+    border-color: white;
+  }
+  50% {
+    border-color: #468bda;
+  }
+  100%{
+    border-color: white;
+  }
+}
+
+.animate-breathing-border {
+  animation: breathing-border 3s ease-in infinite;
+}
+
+@keyframes breathing-title {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #468bda;
+  }
+  100%{
+    color: white;
+  }
+}
+
+.animate-breathing-title {
+  animation: breathing-title 3s ease-in infinite;
+}
